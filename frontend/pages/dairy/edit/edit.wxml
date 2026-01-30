@@ -1,0 +1,39 @@
+<!-- 日记编辑页 - 团队模板适配版 -->
+<view class="edit-container">
+  <!-- 选中的日期 -->
+  <view class="edit-date">📅 {{selectDate}}</view>
+
+  <!-- 心情选择 -->
+  <view class="mood-wrap">
+    <view class="mood-title">今日心情</view>
+    <view class="mood-list">
+      <view class="mood-item {{mood=='开心'?'active':''}}" bindtap="chooseMood" data-mood="开心">开心</view>
+      <view class="mood-item {{mood=='平静'?'active':''}}" bindtap="chooseMood" data-mood="平静">平静</view>
+      <view class="mood-item {{mood=='疲惫'?'active':''}}" bindtap="chooseMood" data-mood="疲惫">疲惫</view>
+      <view class="mood-item {{mood=='难过'?'active':''}}" bindtap="chooseMood" data-mood="难过">难过</view>
+      <view class="mood-item {{mood=='充实'?'active':''}}" bindtap="chooseMood" data-mood="充实">充实</view>
+      <view class="mood-item {{mood=='烦躁'?'active':''}}" bindtap="chooseMood" data-mood="烦躁">烦躁</view>
+    </view>
+  </view>
+
+  <!-- Markdown快捷排版按钮（团队极简要求） -->
+  <view class="md-btn-group">
+    <button bindtap="addMd" data-type="bold">加粗</button>
+    <button bindtap="addMd" data-type="italic">斜体</button>
+    <button bindtap="addMd" data-type="list">列表</button>
+    <button bindtap="addMd" data-type="line">分隔线</button>
+  </view>
+
+  <!-- 日记内容输入框（自动增高） -->
+  <textarea
+    class="content-input"
+    placeholder="写下今日的心情和故事吧..."
+    bindinput="getContent"
+    value="{{content}}"
+    auto-height
+    maxlength="-1"
+  ></textarea>
+
+  <!-- 提交按钮（与团队按钮样式统一） -->
+  <button class="submit-btn" bindtap="submitDiary">提交日记 · 生成AI寄语</button>
+</view>
