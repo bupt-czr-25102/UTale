@@ -1,0 +1,31 @@
+<!-- 日记详情页 - 团队模板适配版 -->
+<view class="detail-container">
+  <!-- 顶部：日期+心情 -->
+  <view class="top-info">
+    <view class="date">{{selectDate}}</view>
+    <view class="mood">✨ 今日心情：{{mood}}</view>
+  </view>
+
+  <!-- 分隔线 -->
+  <view class="line"></view>
+
+  <!-- 日记内容展示 -->
+  <view class="content-wrap">
+    {{content || "暂无日记内容，快去记录吧~"}}
+  </view>
+
+  <!-- 分隔线 -->
+  <view class="line"></view>
+
+  <!-- AI生成内容（占位，后续对接后端替换为真实数据） -->
+  <view class="ai-wrap">
+    <view class="ai-title">💡 AI心情概括</view>
+    <view class="ai-content">基于你的日记，今日整体心情{{mood || "平和"}}，认真生活的每一刻都值得被珍藏~</view>
+
+    <view class="ai-title">🌟 AI暖心寄语</view>
+    <view class="ai-blessing">平凡的日子也有细碎的美好，保持热爱，奔赴下一场山海 ✨</view>
+  </view>
+
+  <!-- 重新编辑按钮 -->
+  <button class="edit-btn" bindtap="goToEdit">重新编辑日记</button>
+</view>
