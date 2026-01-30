@@ -1,0 +1,6 @@
+# Flask后端依赖包
+flask
+flask-cors
+pymysql
+python-dotenv
+requests
