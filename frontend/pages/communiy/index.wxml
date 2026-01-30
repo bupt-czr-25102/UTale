@@ -1,0 +1,12 @@
+<!-- 社区模块首页 -->
+<view class="container">
+  <view class="title">社区</view>
+  <view class="content">
+    <text>这是社区模块的首页，您可以在这里查看、发布和互动社区帖子。</text>
+  </view>
+  <view class="btn-area">
+    <button class="btn" bindtap="goToPostList">社区帖子</button>
+    <button class="btn" bindtap="goToCreatePost">发布帖子</button>
+    <button class="btn" bindtap="goToMyPosts">我的帖子</button>
+  </view>
+</view>
