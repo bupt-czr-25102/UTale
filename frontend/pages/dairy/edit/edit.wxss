@@ -1,0 +1,92 @@
+/* 日记编辑页样式 - 团队模板适配版 */
+page {
+  background-color: #f8f8f8;
+}
+.edit-container {
+  padding: 30rpx 20rpx;
+  font-family: "PingFang SC", "微软雅黑";
+}
+/* 选中日期 */
+.edit-date {
+  font-size: 28rpx;
+  color: #666;
+  text-align: right;
+  margin-bottom: 20rpx;
+}
+/* 心情选择区 */
+.mood-wrap {
+  margin-bottom: 30rpx;
+}
+.mood-title {
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 15rpx;
+  font-weight: 500;
+}
+.mood-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15rpx;
+}
+.mood-item {
+  padding: 12rpx 24rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  font-size: 26rpx;
+  color: #666;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.04);
+}
+.mood-item.active {
+  background-color: #1aad19;
+  color: #fff;
+}
+/* Markdown按钮组 */
+.md-btn-group {
+  display: flex;
+  gap: 10rpx;
+  margin-bottom: 20rpx;
+}
+.md-btn-group button {
+  flex: 1;
+  font-size: 24rpx;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0,0,0,0.04);
+  padding: 0;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+/* 内容输入框 */
+.content-input {
+  width: 100%;
+  min-height: 320rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.8;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  margin-bottom: 40rpx;
+  box-sizing: border-box;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.04);
+  border: none;
+}
+/* 提交按钮 */
+.submit-btn {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #1aad19;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  border: none;
+  box-shadow: 0 4rpx 12rpx rgba(26,173,25,0.2);
+}
+/* 按钮点击反馈 */
+button:active {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
