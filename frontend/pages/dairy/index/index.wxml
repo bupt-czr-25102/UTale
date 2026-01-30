@@ -1,0 +1,47 @@
+<!-- AI日记日历首页 - 团队模板改造版 -->
+<view class="diary-container">
+  <!-- 日历顶部标题 -->
+  <view class="calendar-title">2026年1月 我的AI日记</view>
+  
+  <!-- 星期栏 -->
+  <view class="calendar-week">
+    <view class="week-item">日</view>
+    <view class="week-item">一</view>
+    <view class="week-item">二</view>
+    <view class="week-item">三</view>
+    <view class="week-item">四</view>
+    <view class="week-item">五</view>
+    <view class="week-item">六</view>
+  </view>
+  
+  <!-- 日期栏（核心点击区域，适配团队极简风格） -->
+  <view class="calendar-days">
+    <!-- 上月补位（不可点击） -->
+    <view class="day-item disabled">29</view>
+    <view class="day-item disabled">30</view>
+    <view class="day-item disabled">31</view>
+    <!-- 当月日期（可点击，周末标灰，节假日标红，已写日记加小点点） -->
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-01">1<br/><text class="holiday">元旦</text></view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-02">2</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-03">3</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-04">4</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-05">5</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-06">6</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-07">7</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-08">8</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-09">9</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-10">10</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-11">11</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-12">12</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-13">13</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-14">14</view>
+    <!-- 中间日期可按此格式复制，仅修改date和数字 -->
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-25">25</view>
+    <view class="day-item has-diary" bindtap="goToDetail" data-date="2026-01-26">26</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-27">27</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-28">28</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-29">29</view>
+    <view class="day-item weekend" bindtap="goToEdit" data-date="2026-01-30">30</view>
+    <view class="day-item" bindtap="goToEdit" data-date="2026-01-31">31</view>
+  </view>
+</view>
