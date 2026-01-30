@@ -1,0 +1,28 @@
+# 依赖包
+backend/__pycache__/
+backend/*.pyc
+
+# 编辑器配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# 压缩文件
+*.zip
+*.rar
+*.7z
+
+# 敏感文件
+.env
+*.pem
+*.key
