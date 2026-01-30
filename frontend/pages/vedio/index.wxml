@@ -1,0 +1,12 @@
+<!-- AI视频模块首页 -->
+<view class="container">
+  <view class="title">AI视频</view>
+  <view class="content">
+    <text>这是AI视频模块的首页，您可以在这里查看、创建和管理您的AI视频。</text>
+  </view>
+  <view class="btn-area">
+    <button class="btn" bindtap="goToCreateVideo">创建视频</button>
+    <button class="btn" bindtap="goToVideoList">查看视频</button>
+    <button class="btn" bindtap="goToVideoEdit">视频编辑</button>
+  </view>
+</view>
