@@ -36,37 +36,32 @@
 UTale/
 ├── frontend/              # 前端微信小程序代码
 │   ├── pages/            # 页面文件目录
+│   │   ├── community/    # 社区模块
 │   │   ├── diary/        # AI日记模块
-│   │   │   ├── index/    # 日记首页
+│   │   │   ├── detail/   # 日记详情页
 │   │   │   ├── edit/     # 日记编辑页
-│   │   │   └── detail/   # 日记详情页
-│   │   ├── video/        # AI视频模块
+│   │   │   └── index/    # 日记首页
 │   │   ├── schedule/     # 日程管理模块
-│   │   └── community/    # 社区模块
+│   │   └── video/        # AI视频模块
 │   ├── app.js            # 小程序入口文件
 │   ├── app.json          # 小程序配置文件
 │   ├── app.wxss          # 小程序全局样式
-│   └── project.config.json # 项目配置文件
+│   ├── project.config.json # 项目配置文件
+│   └── project.private.config.json # 项目私有配置文件
 ├── backend/               # 后端Flask代码
 │   ├── modules/          # 功能模块目录
+│   │   ├── community/    # 社区模块API
 │   │   ├── diary/        # AI日记模块API
-│   │   ├── video/        # AI视频模块API
 │   │   ├── schedule/     # 日程管理模块API
-│   │   └── community/    # 社区模块API
+│   │   └── video/        # AI视频模块API
 │   ├── app.py            # Flask应用入口
 │   ├── config.py         # 配置文件
 │   └── requirements.txt  # 依赖包列表
-├── 组员材料/              # 团队成员开发材料
-│   ├── diary 前端1.0 宋/  # 宋同学的AI日记前端代码
-│   ├── index 日程1.0 蔡/   # 蔡同学的日程管理代码
-│   └── 开始阶段规划/       # 各模块的开发规划文档
-├── 寒假开发ing/           # 开发文档和指南
+├── 开发/                  # 开发文档和指南
 │   ├── 任务指南.md        # 开发任务指南
 │   ├── 全局样式使用指南.md # 全局样式使用说明
 │   ├── 思路与规划.md      # 项目整体思路和规划
 │   └── 统一开发标准.md    # 开发规范和标准
-├── 申请书版本/             # 项目立项申请书
-│   └── 邮记立项申请书.终稿.docx # 最终版立项申请书
 └── .gitignore             # Git忽略文件配置
 ```
 
@@ -95,6 +90,7 @@ UTale/
    - 编写了任务指南和开发规范
    - 整理了全局样式使用指南
    - 完成了各模块的开发规划文档
+   - 文档存储在`开发/`目录下
 
 #### 待完成工作：
 1. **功能完善**：
