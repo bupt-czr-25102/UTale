@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/diary/index/index",
+    "pages/video/index",
+    "pages/schedule/index",
+    "pages/community/index",
+    "pages/diary/edit/edit",
+    "pages/diary/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "雏雁",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#4a90e2",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/diary/index/index",
+        "text": "AI日记"
+      },
+      {
+        "pagePath": "pages/video/index",
+        "text": "AI视频"
+      },
+      {
+        "pagePath": "pages/schedule/index",
+        "text": "日程管理"
+      },
+      {
+        "pagePath": "pages/community/index",
+        "text": "社区"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
